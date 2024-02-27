@@ -9,32 +9,47 @@ body {
 /*navbar*/
 nav {
   display: flex;
-  background-color: rgb(207, 117, 0);
+  background-color: rgb(212, 139, 43);
   justify-content: space-around;
   /* padding: 20px 0; atas bawah 20  kiri kanan 0 */
   /* atur padding dengan flex */
   height: 45px;
   align-items: center;
-  color: whitesmoke;
+  color: rgb(78, 44, 0);
 }
 nav ul {
   display: flex;
   list-style: none;
+  align-items: center;
   width: 40%;
   justify-content: space-between;
   transition: all 0.4s;
 }
 nav .logo {
-  font-family: "Srisakdi", cursive;
-  letter-spacing: 3px; /*space antar char*/
+  font-family: "Roboto";
+  letter-spacing: 0cap; /*space antar char*/
 }
-
+nav .imgLogo{
+    width: auto;
+    height: auto;  
+    max-width: 40px;
+    max-height: 40px;
+    display: block;
+    margin-left:15px;
+    margin-right: 15px;
+}
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: rgb(78, 44, 0);
   font-size: 0.9rem;
 }
-
+nav ul li.selected{
+  text-decoration: none;
+  -webkit-text-fill-color: rgb(212, 139, 43);
+  font-size: 0.9rem;
+  background-color: rgb(78, 44, 0);
+  border: 8px solid rgb(78, 44, 0);
+}
 nav ul li a:hover {
   color: teal;
 }
@@ -60,7 +75,7 @@ nav ul li a:hover {
      display: block;
      width: 21px;
      height: 2px;
-     background-color: whitesmoke;
+     background-color: rgb(78, 44, 0);
      border-radius: 3px;
      transition: all 0.7s;
  }
@@ -90,19 +105,19 @@ nav ul li a:hover {
 
   .image {
    
-    width: 100%;
+    width: 80%;
     height: auto;  
-    max-width: 140px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    align-self:center;
 }
 
 .container {
     display: flex;
     flex-direction: column;
 
-    border: 2px solid blue;
+    color: rgb(78, 44, 0);
     padding: 8px;
     border-radius: 5px;
     margin: 0 auto;
@@ -131,14 +146,17 @@ footer {
 h2 {
   
     text-align: center;
-    color: brown;
+    color: rgb(78, 44, 0);
     text-justify: inter-word;
     word-wrap: break-word;
+    padding-bottom: 20px;
+    font-size: 40px;
+
 
 }
 h5 {
   text-align: center;
-  color: red;
+  color: rgb(78, 44, 0);
   word-wrap: break-word;
  
 }
@@ -168,7 +186,7 @@ p {
       height: 100vh;
       justify-content:space-evenly;
       align-items: center;
-      background-color: coral;
+      background-color: rgb(136, 45, 12);
       /* transform: translateX(100%);  */
       transition: all 0.72s;
       opacity: 0;
